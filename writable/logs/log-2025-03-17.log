@@ -1,0 +1,854 @@
+CRITICAL - 2025-03-17 08:35:09 --> ErrorException: Undefined variable $item
+[Method: GET, Route: cart]
+in APPPATH\Views\home\cart.php on line 77.
+ 1 APPPATH\Views\home\cart.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\cart.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\cart.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(30): view('home/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 08:35:10 --> ErrorException: Undefined variable $item
+[Method: GET, Route: cart]
+in APPPATH\Views\home\cart.php on line 77.
+ 1 APPPATH\Views\home\cart.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\cart.php', 77)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\cart.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/cart', [], true)
+ 5 APPPATH\Controllers\CartController.php(30): view('home/cart', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:02:23 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\OrderModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(119): App\Models\OrderModel->createOrder('8', '4650000')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-03-17 15:02:23 --> ErrorException: Undefined array key "price"
+[Method: POST, Route: cart/buyNow]
+in APPPATH\Controllers\CartController.php on line 124.
+ 1 APPPATH\Controllers\CartController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\CartController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:02:52 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\OrderModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(119): App\Models\OrderModel->createOrder('8', '12600000')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-03-17 15:02:52 --> ErrorException: Undefined array key "price"
+[Method: POST, Route: cart/buyNow]
+in APPPATH\Controllers\CartController.php on line 124.
+ 1 APPPATH\Controllers\CartController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\CartController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:03:25 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\OrderModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(119): App\Models\OrderModel->createOrder('8', '12600000')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-03-17 15:03:25 --> ErrorException: Undefined array key "price"
+[Method: POST, Route: cart/buyNow]
+in APPPATH\Controllers\CartController.php on line 124.
+ 1 APPPATH\Controllers\CartController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\CartController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+
+ERROR - 2025-03-17 15:03:43 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\OrderModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(119): App\Models\OrderModel->createOrder('8', '12600000')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-03-17 15:03:43 --> ErrorException: Undefined array key "price"
+[Method: POST, Route: cart/buyNow]
+in APPPATH\Controllers\CartController.php on line 124.
+ 1 APPPATH\Controllers\CartController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\CartController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+
+
+
+
+ERROR - 2025-03-17 15:03:51 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\OrderModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(119): App\Models\OrderModel->createOrder('8', '12600000')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-03-17 15:03:51 --> ErrorException: Undefined array key "price"
+[Method: POST, Route: cart/buyNow]
+in APPPATH\Controllers\CartController.php on line 124.
+ 1 APPPATH\Controllers\CartController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\CartController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:03:55 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\OrderModel.php(21): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(119): App\Models\OrderModel->createOrder('8', '12600000')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-03-17 15:03:55 --> ErrorException: Undefined array key "price"
+[Method: POST, Route: cart/buyNow]
+in APPPATH\Controllers\CartController.php on line 124.
+ 1 APPPATH\Controllers\CartController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\CartController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:08:57 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-17 15:08:57 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: cart/buyNow]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:09:59 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-17 15:09:59 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: cart/buyNow]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+
+
+
+
+ERROR - 2025-03-17 15:11:40 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-17 15:11:40 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: cart/buyNow]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 15:12:09 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-17 15:12:09 --> Error: Call to a member function getResult() on bool
+[Method: POST, Route: cart/buyNow]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\CartController.php(126): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CartController->buyNow()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CartController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+
+
+
+
+CRITICAL - 2025-03-17 16:15:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/27]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('27')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 16:44:44 --> ErrorException: Undefined array key "payment_method"
+[Method: GET, Route: admin/manage_orders]
+in APPPATH\Views\admin\manage_orders.php on line 42.
+ 1 APPPATH\Views\admin\manage_orders.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment_method"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\admin\\manage_orders.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\admin\\manage_orders.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/manage_orders', [], true)
+ 5 APPPATH\Controllers\OrderManagementController.php(16): view('admin/manage_orders', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderManagementController->manageOrders()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderManagementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:01:39 --> Error: Class "App\Controllers\CategoryModel" not found
+[Method: GET, Route: home/history]
+in APPPATH\Controllers\OrderController.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderController->orderHistory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:01:49 --> Error: Class "App\Controllers\CategoryModel" not found
+[Method: GET, Route: home/history]
+in APPPATH\Controllers\OrderController.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderController->orderHistory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:04:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order_history.php"
+[Method: GET, Route: home/history]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order_history.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('order_history', [], true)
+ 3 APPPATH\Controllers\OrderController.php(124): view('order_history', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderController->orderHistory()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:04:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order_history.php"
+[Method: GET, Route: home/history]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order_history.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('order_history', [], true)
+ 3 APPPATH\Controllers\OrderController.php(125): view('order_history', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderController->orderHistory()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:14:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order_history.php"
+[Method: GET, Route: home/history]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order_history.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('order_history', [], true)
+ 3 APPPATH\Controllers\OrderController.php(128): view('order_history', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderController->orderHistory()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:16:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order_history.php"
+[Method: GET, Route: order/history]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order_history.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('order_history', [], true)
+ 3 APPPATH\Controllers\OrderController.php(128): view('order_history', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OrderController->orderHistory()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:22:22 --> ParseError: Unclosed '{' on line 12
+[Method: GET, Route: order/history]
+in APPPATH\Controllers\OrderController.php on line 210.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\OrderController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\OrderController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\OrderController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\OrderController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 17:34:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/news.php"
+[Method: GET, Route: home/news]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/news.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/news', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('home/news')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->news()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 18:03:28 --> ErrorException: Undefined array key "username"
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Views\home\item_details.php on line 214.
+ 1 APPPATH\Views\home\item_details.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\item_details.php', 214)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\item_details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/item_details', [], true)
+ 5 APPPATH\Controllers\ItemController.php(52): view('home/item_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:08:10 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:08:10 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:08:17 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:08:17 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:08:30 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:08:30 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:08:31 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:08:31 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:08:31 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:08:31 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 18:08:37 --> ParseError: syntax error, unexpected identifier "z", expecting "function" or "const"
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Controllers\ItemController.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ItemController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ItemController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\ItemController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-17 18:08:40 --> ParseError: syntax error, unexpected identifier "z", expecting "function" or "const"
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Controllers\ItemController.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ItemController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ItemController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\ItemController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:08:48 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:08:48 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:09:17 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:09:17 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/36]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(23): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('36')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:13:13 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('37')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-17 18:13:13 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/37]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(21): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('37')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-17 18:14:50 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('37')
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2025-03-17 18:14:50 --> Query failed in getComments: SELECT `comments`.*, `users`.`username`
+FROM `comments`
+LEFT JOIN `users` ON `users`.`id` = `comments`.`user_id`
+WHERE `comments`.`product_id` = '37'
+ORDER BY `comments`.`created_at` DESC
+ERROR - 2025-03-17 18:15:00 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('37')
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2025-03-17 18:15:00 --> Query failed in getComments: SELECT `comments`.*, `users`.`username`
+FROM `comments`
+LEFT JOIN `users` ON `users`.`id` = `comments`.`user_id`
+WHERE `comments`.`product_id` = '37'
+ORDER BY `comments`.`created_at` DESC
+ERROR - 2025-03-17 18:16:26 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(33): App\Models\CommentsModel->getComments('37')
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2025-03-17 18:16:26 --> Query failed in getComments: SELECT `comments`.*, `users`.`username`
+FROM `comments`
+LEFT JOIN `users` ON `users`.`id` = `comments`.`user_id`
+WHERE `comments`.`product_id` = '37'
+ORDER BY `comments`.`created_at` DESC
+CRITICAL - 2025-03-17 18:17:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/news.php"
+[Method: GET, Route: home/news]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/news.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/news', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('home/news')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->news()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+
+
+
+ERROR - 2025-03-17 18:18:22 --> mysqli_sql_exception: Unknown column 'users.username' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `comment...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `comment...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `comment...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `comment...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(23): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(33): App\Models\CommentsModel->getComments('35')
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('35')
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+ERROR - 2025-03-17 18:18:22 --> Query failed in getComments: SELECT `comments`.*, `users`.`username`
+FROM `comments`
+LEFT JOIN `users` ON `users`.`id` = `comments`.`user_id`
+WHERE `comments`.`product_id` = '35'
+ORDER BY `comments`.`created_at` DESC
+
+

@@ -1,0 +1,185 @@
+CRITICAL - 2025-03-13 14:37:30 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/37]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:40:36 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/33]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('33')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:41:20 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/37]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:41:21 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:41:22 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/35]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('35')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:42:53 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/32]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('32')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:42:56 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/30]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('30')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:42:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/34]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('34')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:58:02 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/35]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('35')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 14:58:03 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 15:09:44 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/37]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('37')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 15:09:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 15:09:47 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/35]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('35')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-13 15:11:26 --> mysqli_sql_exception: Unknown column 'parent_id' in 'where clause' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Models\CommentsModel.php(22): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('10')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\ItemController->show('10')
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-03-13 15:11:26 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: home/item_details/10]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Models\CommentsModel.php(22): CodeIgniter\BaseModel->findAll()
+ 3 APPPATH\Controllers\ItemController.php(36): App\Models\CommentsModel->getComments('10')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('10')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-13 15:45:21 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: home/item_details/36]
+in APPPATH\Controllers\ItemController.php on line 47.
+ 1 APPPATH\Controllers\ItemController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Controllers\\ItemController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ItemController->show('36')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ItemController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')

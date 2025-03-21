@@ -1,0 +1,308 @@
+CRITICAL - 2025-03-10 15:40:35 --> ErrorException: Undefined variable $brands
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 26.
+ 1 APPPATH\Views\home\category_products.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(131): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:40:37 --> ErrorException: Undefined variable $brands
+[Method: GET, Route: category/7]
+in APPPATH\Views\home\category_products.php on line 26.
+ 1 APPPATH\Views\home\category_products.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(131): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:40:40 --> ErrorException: Undefined variable $brands
+[Method: GET, Route: category/9]
+in APPPATH\Views\home\category_products.php on line 26.
+ 1 APPPATH\Views\home\category_products.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(131): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('9')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-10 15:42:05 --> mysqli_sql_exception: Unknown column 'brand' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `brand`\n...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `brand`\n...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `brand`\n...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `brand`\n...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\HomeController.php(127): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('9')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-10 15:42:05 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: category/9]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\HomeController.php(127): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('9')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-10 15:42:08 --> mysqli_sql_exception: Unknown column 'brand' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `brand`\n...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `brand`\n...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `brand`\n...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `brand`\n...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\HomeController.php(127): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-03-10 15:42:08 --> Error: Call to a member function getResult() on bool
+[Method: GET, Route: category/7]
+in SYSTEMPATH\Model.php on line 287.
+ 1 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 2 APPPATH\Controllers\HomeController.php(127): CodeIgniter\BaseModel->findAll()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+ERROR - 2025-03-10 15:43:54 --> mysqli_sql_exception: Unknown column 'brand' in 'field list' in C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `brand`\n...', 0)
+#1 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `brand`\n...')
+#2 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `brand`\n...')
+#3 C:\xampp\htdocs\codeigniter\webdienmay\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `brand`\n...', Array, false)
+#4 C:\xampp\htdocs\codeigniter\webdienmay\app\Controllers\HomeController.php(128): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+#6 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#7 C:\xampp\htdocs\codeigniter\webdienmay\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\codeigniter\webdienmay\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\codeigniter\webdienmay\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\codeigniter\webdienmay\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-10 15:43:54 --> Error: Call to a member function getResultArray() on bool
+[Method: GET, Route: category/7]
+in APPPATH\Controllers\HomeController.php on line 129.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:47:55 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: category/7]
+in APPPATH\Views\home\category_products.php on line 28.
+ 1 APPPATH\Views\home\category_products.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:47:58 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: category/7]
+in APPPATH\Views\home\category_products.php on line 28.
+ 1 APPPATH\Views\home\category_products.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:50:46 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: category/7]
+in APPPATH\Views\home\category_products.php on line 28.
+ 1 APPPATH\Views\home\category_products.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:50:49 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 28.
+ 1 APPPATH\Views\home\category_products.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:51:14 --> ErrorException: Undefined array key "brand"
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 64.
+ 1 APPPATH\Views\home\category_products.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:51:17 --> ErrorException: Undefined array key "brand"
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 64.
+ 1 APPPATH\Views\home\category_products.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 15:54:23 --> ErrorException: Undefined array key "brand"
+[Method: GET, Route: category/8]
+in APPPATH\Views\home\category_products.php on line 64.
+ 1 APPPATH\Views\home\category_products.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('8')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 16:02:48 --> ErrorException: Undefined array key "brand"
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 64.
+ 1 APPPATH\Views\home\category_products.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(141): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 16:04:48 --> ErrorException: Undefined array key "discount"
+[Method: GET, Route: category/7]
+in APPPATH\Views\home\category_products.php on line 73.
+ 1 APPPATH\Views\home\category_products.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "discount"', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 73)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(148): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 16:34:55 --> ErrorException: Undefined variable $otherProducts
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 95.
+ 1 APPPATH\Views\home\category_products.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $otherProducts', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 95)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(148): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 16:37:09 --> ErrorException: Undefined variable $otherProducts
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 91.
+ 1 APPPATH\Views\home\category_products.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $otherProducts', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(148): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')
+CRITICAL - 2025-03-10 16:37:12 --> ErrorException: Undefined variable $otherProducts
+[Method: GET, Route: category/6]
+in APPPATH\Views\home\category_products.php on line 91.
+ 1 APPPATH\Views\home\category_products.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $otherProducts', 'C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php', 91)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\app\\Views\\home\\category_products.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home/category_products', [], true)
+ 5 APPPATH\Controllers\HomeController.php(148): view('home/category_products', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->categoryProducts('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\codeigniter\\webdienmay\\public\\index.php')

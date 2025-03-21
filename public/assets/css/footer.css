@@ -1,0 +1,97 @@
+/* Footer tổng thể */
+footer {
+    margin-top: 100px;
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    font-size: 14px;
+    color: #333;
+    border-top: 3px solid #e60000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #e60000;
+}
+
+/* Thông tin liên hệ */
+.footer-column i {
+    margin-right: 8px;
+    color: #e60000;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #e60000;
+}
+
+/* Mạng xã hội */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e60000;
+}
+
+/* Phương thức thanh toán */
+.payment-methods img {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+/* Thanh bản quyền */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}

@@ -1,0 +1,167 @@
+/* Cấu hình chung */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+}
+
+/* ================= CONTAINER CHÍNH ================= */
+.container__cart {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+/* ================= BREADCRUMB ================= */
+.breadcrumb {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+    max-width: 1210px; /* Same max-width as .container__cart */
+    margin: 0 auto; /* Center breadcrumb */
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Align vertically */
+    gap: 5px; /* Space between breadcrumb elements */
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #e60000;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* ================= PAGE TITLE ================= */
+.page-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-info p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+}
+
+/* ================= GIỎ HÀNG ================= */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.cart-table th {
+    background-color: #f2f2f2;
+}
+
+.cart-table td img {
+    width: 50px;
+    height: auto;
+}
+
+.cart-table input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.cart-table .total-price {
+    font-weight: bold;
+    color: red;
+}
+
+/* ================= NÚT TĂNG GIẢM SỐ LƯỢNG ================= */
+button[type="button"] {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="button"]:hover {
+    background-color: #e60000;
+    color: white;
+}
+
+/* ================= CHỌN TẤT CẢ ================= */
+#select-all {
+    margin-right: 10px;
+}
+
+/* ================= PHẦN CHUYỂN TIỀN ================= */
+/* Căn phải nút */
+.btn-primary {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: auto; /* This will align it to the right */
+    margin-right: 0;
+    display: block; /* Makes sure the button takes up full width of its container */
+}
+
+
+.btn-primary:hover {
+    background-color: #c70000;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 1024px) {
+    .cart-table {
+        font-size: 14px;
+    }
+
+    .cart-table td, .cart-table th {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container__cart {
+        padding: 15px;
+    }
+
+    .cart-table td, .cart-table th {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__cart {
+        padding: 10px;
+    }
+
+    .cart-table td, .cart-table th {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

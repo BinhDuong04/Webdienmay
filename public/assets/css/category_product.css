@@ -1,0 +1,307 @@
+/* ================= Cấu hình chung ================= */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    box-sizing: border-box; /* Ensure padding and margin don't cause overflow */
+}
+
+/* ================= CONTAINER CHÍNH ================= */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* ================= BREADCRUMB ================= */
+.breadcrumb {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #666;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #e60000;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* ================= MENU BỘ LỌC ================= */
+.filter-menu {
+    width: 22%;
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-menu h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.brand-list, .price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand-list li, .price-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-list li:hover, .price-list li:hover {
+    background: #f2f2f2;
+}
+
+/* ================= DANH SÁCH SẢN PHẨM ================= */
+.content {
+    width: 76%;
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+}
+
+.content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Danh sách sản phẩm */
+.filtered-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sản phẩm mỗi hàng */
+    gap: 15px;
+    justify-content: center;
+    
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Sản phẩm đơn lẻ */
+.product-card {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    color: inherit; /* Giữ màu chữ như ban đầu */
+    border-radius: 8px;
+    text-decoration: none; /* Xóa gạch chân */
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto; /* Ensure image maintains aspect ratio */
+    border-radius: 8px;
+    object-fit: cover; /* Ensure image doesn't overflow */
+}
+
+/* Nhãn "Sắp hết hàng" */
+.low-stock {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Apply ellipsis to both h3 and h4 inside product card */
+.product-card h3, .product-card h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+    max-width: 100%; /* Ensure text respects the container width */
+    display: block;
+    word-wrap: break-word; /* Ensure long words break correctly */
+    text-align: center; /* Optional: Center the product name */
+}
+
+
+/* Giá sản phẩm */
+.price {
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+.old-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.stock {
+    font-size: 11px;
+    color: #555;
+}
+
+/* Thanh tiến trình */
+.progress-bar {
+    background: #ddd;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.progress {
+    height: 100%;
+    background: red;
+    border-radius: 4px;
+}
+
+/* ================= SẮP XẾP SẢN PHẨM ================= */
+.sort-options {
+    margin-bottom: 20px;
+}
+
+.sort-options span {
+    font-weight: bold;
+}
+
+.sort-btn {
+    padding: 8px 12px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ================= Nút sắp xếp ================= */
+.sort-btn.active {
+    background-color: #e60000; /* Màu nền khi chọn */
+    color: white; /* Màu chữ khi chọn */
+    border-color: #e60000; /* Đổi màu border khi chọn */
+}
+
+
+/* ================= PHÂN TRANG ================= */
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.page-item {
+    margin: 5px;
+}
+
+.page-item a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.page-item a:hover, .page-item.active a {
+    background: #e60000;
+    color: white;
+}
+
+/* ================= STYLE CHO SẢN PHẨM KHÁC ================= */
+.other-products {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.other-products h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Danh sách sản phẩm khác */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Hiển thị 5 sản phẩm trên mỗi hàng */
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Hiệu ứng hover */
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Ẩn thông báo nếu không có sản phẩm */
+.no-product-message {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 1024px) {
+    .filtered-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 sản phẩm mỗi hàng */
+    }
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 sản phẩm khác mỗi hàng */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .filter-menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content {
+        width: 100%;
+    }
+    .filtered-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 sản phẩm mỗi hàng */
+    }
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 sản phẩm khác mỗi hàng */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filtered-grid, .product-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 sản phẩm mỗi hàng */
+    }
+}

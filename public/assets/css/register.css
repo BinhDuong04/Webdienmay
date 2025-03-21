@@ -1,0 +1,111 @@
+/* Định dạng chung */
+body {
+    background: rgb(244,244,244);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Khung chứa form */
+.form-container {
+    margin-top: 40px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Tiêu đề */
+h3 {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* Alert thông báo */
+.alert {
+    font-size: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Nhãn */
+.form-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #34495e;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input - được chỉnh nhỏ lại */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;       /* giảm padding từ 12px xuống 8px */
+    font-size: 12px;    /* chỉnh lại font-size cho phù hợp */
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #0072ff;
+    box-shadow: 0px 0px 8px rgba(0, 114, 255, 0.3);
+}
+
+/* Điều chỉnh khoảng cách cho mb-3 */
+.mb-3 {
+    margin-bottom: 8px;   /* giảm margin-bottom từ 10px xuống 8px */
+}
+
+/* Nút Đăng ký */
+.btn-success {
+    background: #28a745;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Liên kết đăng nhập */
+.text-center a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.text-center a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Hiệu ứng khi focus vào input */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #0072ff;
+    box-shadow: 0 0 10px rgba(0, 114, 255, 0.2);
+}
+
+/* Hiệu ứng khi nhấn nút */
+button:active {
+    transform: scale(0.98);
+}

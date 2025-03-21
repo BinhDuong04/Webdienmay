@@ -1,0 +1,192 @@
+/* ----- RESET CƠ BẢN ----- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4; /* Nền chính */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----- BANNER TRÊN CÙNG ----- */
+.top-banner {
+    display: flex;
+    width: 100%;
+}
+
+.top-banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* ----- THANH ĐIỀU HƯỚNG CHÍNH (HEADER) ----- */
+.top-bar {
+    background-color: red !important; /* Giữ màu nền đỏ */
+    padding: 10px 0;
+    position: relative;
+    z-index: 1000; /* Đảm bảo hiển thị trên tất cả */
+}
+
+.top-bar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ----- LOGO ----- */
+.logo img {
+    height: 60px;
+}
+
+/* ----- THANH TÌM KIẾM ----- */
+.search-bar {
+    display: flex;
+    width: 35%; /* Điều chỉnh độ dài */
+    position: relative;
+}
+
+.search-bar>form>input {
+    width: 185%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-bar button i {
+    font-size: 16px;
+    color: #f8f8f8;
+}
+
+/* ----- HỖ TRỢ KHÁCH HÀNG + TÀI KHOẢN + GIỎ HÀNG ----- */
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* Giữ icon nằm ngang với text */
+.support, .account, .cart {
+    display: flex;
+    align-items: center; /* Giữ icon và text trên cùng một hàng */
+    gap: 8px; /* Khoảng cách giữa icon và text */
+    color: white;
+    font-size: 16px;
+}
+
+/* Định dạng phần text nằm dọc */
+.support-text, .account-text, .cart-text {
+    display: flex;
+    flex-direction: column; /* Xếp nội dung bên trong theo hàng dọc */
+    text-align: left; /* Căn trái văn bản */
+}
+
+
+.support strong {
+    color: yellow;
+}
+
+/* Giỏ hàng */
+.cart {
+    background-color: #ffcc00;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.cart a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cart-count {
+    background-color: white;
+    color: red;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* ----- THANH MENU DANH MỤC SẢN PHẨM ----- */
+.menu {
+    background-color: #e60000;
+    padding: 10px;
+}
+
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Canh giữa menu */
+    gap: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Danh mục menu ngang */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Căn giữa menu */
+    gap: 80px; /* Tăng khoảng cách giữa các mục */
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white; /* Màu chữ mặc định */
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+/* Hover chỉ thay đổi màu chữ */
+.nav-links li a:hover {
+    color: #990000; /* Thay đổi màu chữ khi hover */
+    border-radius: 5px;
+    background-color: transparent; /* Không thay đổi màu nền */
+    text-decoration: underline; /* Thêm gạch chân nếu muốn */
+}
+
+/* Bỏ phóng to */
+.nav-links li a {
+    transform: none;
+}
+
+/* Điều chỉnh marquee */
+.marquee-container {
+    flex-grow: 1;
+    max-width: 25%; /* Giới hạn độ rộng marquee */
+    overflow: hidden;
+}
+
+marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+}
